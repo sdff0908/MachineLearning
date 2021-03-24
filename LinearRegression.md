@@ -198,7 +198,8 @@ sk: [[1.75864872]]
 
 #### 5) 결과 비교
 
-![다운로드](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-1614775454192.png)
+![다운로드-1614775454192](https://user-images.githubusercontent.com/72610879/112247496-bfc15180-8c97-11eb-8245-e596c84589b5.png)
+
 
 ### 2-1. Multivariate Linear Regression
 
@@ -493,7 +494,7 @@ x_data가 1차원 형태이면 (3, ) 으로 입력
 * Dense( )
 
   FC layer에 사용
-1: output layer에 있는 노드 갯수, ![CodeCogsEqn (3)](md-images/CodeCogsEqn%20(3).gif)
+1: output layer에 있는 노드 갯수, ![CodeCogsEqn (3)](https://user-images.githubusercontent.com/72610879/112248416-3a3ea100-8c99-11eb-9d83-3a93bf0fe990.gif)
   activation: 사용할 함수
 
 * mse : mean squared error (오차 제곱의 평균)

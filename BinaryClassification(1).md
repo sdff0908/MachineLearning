@@ -249,7 +249,8 @@ rank     0
 dtype: int64
 ```
 
-![다운로드](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-1614792657699.png)
+![다운로드-1614792657699](https://user-images.githubusercontent.com/72610879/112245126-a74f3800-8c93-11eb-9b93-a9a7195d78ab.png)
+
 
 #### 2) Tensorflow.v1
 

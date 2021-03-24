@@ -137,7 +137,7 @@ data flow graph 생성 → 노드 실행
 
 ### 1) 그래프 구성
 
-![그림1](md-images/%EA%B7%B8%EB%A6%BC1-1614272979437.png)	
+![그림1-1614272979437](https://user-images.githubusercontent.com/72610879/112249115-8a6a3300-8c9a-11eb-95f0-f771e8edd14f.png)
 
 * node:  수치연산, 데이터 입출력
 * edge: 데이터 이동
@@ -163,7 +163,7 @@ tf.Session() : 1.x 버전에서 그래프 실행하기 위해 반드시 필요. 
 
 ## 6. Tensorflow.v2
 
-![tf](md-images/tf.png)	
+![tf](https://user-images.githubusercontent.com/72610879/112249139-9950e580-8c9a-11eb-9ca3-b5ea45a2fc09.png)
 
 ### 1) v1 과 v2 차이
 
@@ -225,7 +225,7 @@ print(tf.__version__)
 IQR(Interquartile Range) value =  3사분위 값 - 1사분위 값
 이상치: 1사분위 값 - (IQR value * 1.5) 미만인 값 , 3사분위 값 + (IQR value * 1.5) 초과인 값
 
-![다운로드](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-1614279797072.png)
+![다운로드-1614279797072](https://user-images.githubusercontent.com/72610879/112249179-aa015b80-8c9a-11eb-911c-aa339e5ecfa2.png)
 
 ```python
 import numpy as np
@@ -261,7 +261,7 @@ plt.show()
 표준 정규분포: 평균이 0이고 표준편차가 1인 정규분포
 z-score: 표준 정규분포의 확률 변수
 
-![CodeCogsEqn (3)](md-images/CodeCogsEqn%20(3).gif)	
+![CodeCogsEqn (3)](https://user-images.githubusercontent.com/72610879/112249290-d3ba8280-8c9a-11eb-9bea-37adb668d40c.gif)
 
 ```python
 import numpy as np
@@ -338,7 +338,7 @@ KNN classification, KNN regression
 모든 데이터 값을 최소 0, 최대 1로 변환
 이상치에 매우 민감하기에 반드시 이상치 처리 후 사용
 
-![CodeCogsEqn (1)](md-images/CodeCogsEqn%20(1).gif)	
+![CodeCogsEqn (1)](https://user-images.githubusercontent.com/72610879/112249430-1d0ad200-8c9b-11eb-95d6-8cf5bb6b8473.gif)
 
 ### 2) Standardization
 
@@ -346,7 +346,7 @@ KNN classification, KNN regression
 
 동일한 scale 사용할 수 없음
 
-![CodeCogsEqn](md-images/CodeCogsEqn-1614354159929.gif)	
+![CodeCogsEqn-1614354159929](https://user-images.githubusercontent.com/72610879/112249379-02385d80-8c9b-11eb-9cd1-3c058b808e29.gif)
 
 ## 10. Basic Algorithms
 
@@ -356,13 +356,13 @@ KNN classification, KNN regression
 
 feature(x) 개수가 1개인 linear regression
 
-![CodeCogsEqn (4)](md-images/CodeCogsEqn%20(4)-1615906627713.gif)	
+![CodeCogsEqn (4)-1615906627713](https://user-images.githubusercontent.com/72610879/112249547-53e0e800-8c9b-11eb-99f3-a0464219e5dc.gif)
 
 * multiple linear regression
 
 feature(x) 개수가 2개 이상인 linear regression
 
-![CodeCogsEqn (3)](md-images/CodeCogsEqn%20(3)-1615906395793.gif)	
+![CodeCogsEqn (3)-1615906395793](https://user-images.githubusercontent.com/72610879/112249556-593e3280-8c9b-11eb-940f-e12d5daaccc5.gif)
 
 ### 2) Logistic Regression
 
@@ -382,7 +382,7 @@ plt.plot(x_data, y_data)
 plt.show()
 ```
 
-![다운로드](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-1614779202860.png)	
+![다운로드-1614775454192](https://user-images.githubusercontent.com/72610879/112249576-63603100-8c9b-11eb-86f3-a1664516e40f.png)
 
 * multinomial classification
 
@@ -403,16 +403,14 @@ Linear Regression의 Hypothesis인 y = ax + b를 softmax 함수와 합성, y 값
 
 모델이 True로 분류한 것 중 실제 정답이 True인 비율
 
-![CodeCogsEqn](md-images/CodeCogsEqn-1614751633608.gif)	
+![CodeCogsEqn-1614751633608](https://user-images.githubusercontent.com/72610879/112249629-796df180-8c9b-11eb-99b3-4b8679618ff7.gif)
 
 ### 3) Recall
 
 실제 정답이 True인 것 중 모델이 True라고 예측한 비율
 Sensitivity, Hit Rate
 
-![CodeCogsEqn (1)](md-images/CodeCogsEqn%20(1)-1614751894565.gif)	
-
-![CodeCogsEqn (2)](md-images/CodeCogsEqn%20(2).gif)	
+![CodeCogsEqn (1)-1614751894565](https://user-images.githubusercontent.com/72610879/112249675-87237700-8c9b-11eb-8ef2-13b5a4a45d48.gif)
 
 예) A 모델: 고양이 사진 검출율 99.9% + 그림 1장 당 5건 오검출  →  Recall ↑
       B모델: 고양이 사진 검출율 67.3% + 오검출X  →   Precision ↑
@@ -422,19 +420,19 @@ Sensitivity, Hit Rate
 
 Precision 과 Recall 의 조화평균
 
-![CodeCogsEqn (4)](md-images/CodeCogsEqn%20(4).gif)	
+![CodeCogsEqn (4)](https://user-images.githubusercontent.com/72610879/112249811-bd60f680-8c9b-11eb-8bed-cda508156ced.gif)
 
 ### 5) Accuracy 
 
 실제 정답과 분류 결과가 일치하는 비율
 
-![CodeCogsEqn (3)](md-images/CodeCogsEqn%20(3)-1614753808012.gif)
+![CodeCogsEqn (3)-1614753808012](https://user-images.githubusercontent.com/72610879/112249856-d1a4f380-8c9b-11eb-89cc-d550e55177b8.gif)
 
 ### 6) Fall-Out	
 
 실제 정답이 False인 것 중에 모델이 True로 잘못 예측한 비율
 
-![CodeCogsEqn](md-images/CodeCogsEqn-1614819142063.gif)	
+![CodeCogsEqn-1614819142063](https://user-images.githubusercontent.com/72610879/112249881-dd90b580-8c9b-11eb-91a3-31af1b9fabd7.gif)
 
 ## 12. Overfitting
 

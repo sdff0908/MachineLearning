@@ -264,7 +264,7 @@ plt.plot(history.history['val_sparse_categorical_accuracy'])
 plt.show()
 ```
 
-![다운로드](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-1616320645717.png)
+![다운로드-1616320645717](https://user-images.githubusercontent.com/72610879/112250371-9a831200-8c9c-11eb-8219-66fac091235e.png)
 
 가로축: epochs
 세로축: accuracy

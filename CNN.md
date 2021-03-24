@@ -27,7 +27,7 @@
 
 이미지 좌표계 사용(≠데카르트 좌표계)
 
-<img src="![3](https://user-images.githubusercontent.com/72610879/112251165-19c51580-8c9e-11eb-8b0e-2937b3d4d537.png)" alt="	" style="zoom:48%;" />	
+![3](https://user-images.githubusercontent.com/72610879/112251165-19c51580-8c9e-11eb-8b0e-2937b3d4d537.png)
 
 (m, n)행렬 : 이미지를 ndarray 로 표현, pixel(y, x)
 .jpg : 3 channels (RGB : red, green, blue)
@@ -81,7 +81,7 @@ x: 100, y: 200의 pixel값(r,g,b): [93 117  19]
    R : 0 ~ 255 (8 bit), G : 0 ~ 255 (8 bit), B : 0~255 (8 bit) → 픽셀당 24 bit 사용
    픽셀은 삼원색의 색상값 표현
 
-   <img src="![4](https://user-images.githubusercontent.com/72610879/112251133-06b24580-8c9e-11eb-946d-4f094cb8d3e4.png)" alt="4" style="zoom:67%;" />	
+![4](https://user-images.githubusercontent.com/72610879/112251133-06b24580-8c9e-11eb-946d-4f094cb8d3e4.png)
 
 ```python
 print(pixel)
@@ -195,7 +195,7 @@ print(original.shape)
 
  imread() : ndarray 가져오기
 
-<img src="![6](https://user-images.githubusercontent.com/72610879/112251070-e2eeff80-8c9d-11eb-8288-1720423f1f22.png)" alt="6" style="zoom:50%;" />	
+![6](https://user-images.githubusercontent.com/72610879/112251070-e2eeff80-8c9d-11eb-8288-1720423f1f22.png)	
 
 ```python
 (429, 640, 3)
@@ -294,8 +294,7 @@ plt.imshow(conv_img)
 plt.show()	
 ```
 
-<img src="![7](https://user-images.githubusercontent.com/72610879/112251089-f4380c00-8c9d-11eb-85f2-1bc59cdd848d.png)
-" alt="7" style="zoom:50%;" />	
+![7](https://user-images.githubusercontent.com/72610879/112251089-f4380c00-8c9d-11eb-85f2-1bc59cdd848d.png)
 
 #### 3) relu
 
@@ -334,4 +333,4 @@ plt.imshow(pooling_img)
 plt.show()
 ```
 
-<img src="![8](https://user-images.githubusercontent.com/72610879/112251113-fd28dd80-8c9d-11eb-8204-f97349849b0e.png)" alt="8" style="zoom:50%;" />	
+![8](https://user-images.githubusercontent.com/72610879/112251113-fd28dd80-8c9d-11eb-8204-f97349849b0e.png)

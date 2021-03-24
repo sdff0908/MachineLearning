@@ -14,7 +14,7 @@ It is a type of linear classifier.
 | 1    | 0    | 0      |
 | 1    | 1    | 1      |
 
-![캡처1](md-images/%EC%BA%A1%EC%B2%981.PNG)
+<img width="212" alt="캡처1" src="https://user-images.githubusercontent.com/72610879/112248568-7a058880-8c99-11eb-87cd-947912fd38a1.PNG">
 
 #### 1) Training Data Set	
 
@@ -94,7 +94,7 @@ weighted avg       1.00      1.00      1.00         4
 | 1    | 0    | 1      |
 | 1    | 1    | 1      |
 
-![캡처3](md-images/%EC%BA%A1%EC%B2%983.PNG)	
+<img width="228" alt="캡처3" src="https://user-images.githubusercontent.com/72610879/112248588-80940000-8c99-11eb-8242-890204ce32c1.PNG">
 
 #### 1) Training Data Set
 

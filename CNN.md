@@ -27,7 +27,7 @@
 
 이미지 좌표계 사용(≠데카르트 좌표계)
 
-![3](https://user-images.githubusercontent.com/72610879/112251523-c1dade80-8c9e-11eb-9654-8b3cfd12ece5.png)
+![3](https://user-images.githubusercontent.com/72610879/112251739-26963900-8c9f-11eb-95a8-ca9d070614ab.png)
 
 (m, n)행렬 : 이미지를 ndarray 로 표현, pixel(y, x)
 .jpg : 3 channels (RGB : red, green, blue)

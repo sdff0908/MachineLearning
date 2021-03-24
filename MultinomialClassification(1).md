@@ -100,7 +100,7 @@ def run_train(sess,x_data,y_data):
 Y의 shape=[None, 3] ← One-hot Encoding 때문에 3
 1행 : height, 2행 : weight
 
-![CodeCogsEqn (2)](md-images/CodeCogsEqn%20(2).gif)	
+![CodeCogsEqn (2)](https://user-images.githubusercontent.com/72610879/112250498-d1592800-8c9c-11eb-998a-eeeac8c281bb.gif)
 
 multivariate classification: softmax 함수 사용
 binary classification: sigmoid 함수 사용
@@ -124,9 +124,9 @@ print('accuracy:', result)
 accuracy: 0.983
 ```
 
-tf.argmax(H, axis =1) : 각 행 별로 최댓값 선택 
+tf.argmax(H, axis = 1) : 각 행 별로 최댓값이 있는 인덱스(열) 선택 
 
-![CodeCogsEqn (1)](md-images/CodeCogsEqn%20(1).gif)	
+![CodeCogsEqn (1)](https://user-images.githubusercontent.com/72610879/112250526-dddd8080-8c9c-11eb-8c7a-1a8a7403c6c8.gif)
 
 tf.equal : 두 값이 같으면 True, 두 값이 다르면 False
 tf.cast : True = 1, False = 0 으로 계산
@@ -140,7 +140,7 @@ tf.cast : True = 1, False = 0 으로 계산
 
 예) k=5
 
-![그림](md-images/%EA%B7%B8%EB%A6%BC.png)
+![그림](https://user-images.githubusercontent.com/72610879/112250587-f8aff500-8c9c-11eb-88db-53a478f14c92.png)
 
 ```python
 # train

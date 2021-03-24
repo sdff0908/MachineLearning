@@ -589,20 +589,22 @@ W1 = tf.get_variable('W1', shape=[784,64], initializer=tf.contrib.layers.varianc
 b1 = tf.Variable(tf.random.normal([64]))
 layer1 = tf.nn.relu(tf.matmul(X,W1) + b1)
 
-_W2 = tf.get_variable('W2', shape=[64,32], initializer=tf.contrib.layers.variance_scaling_initializer())
-_b2 = tf.Variable(tf.random.normal([32]))
-layer2 = tf.nn.relu(tf.matmul(layer1, _W2) + _b2)
+W2 = tf.get_variable('W2', shape=[64,32], initializer=tf.contrib.layers.variance_scaling_initializer())
+b2 = tf.Variable(tf.random.normal([32]))
+_layer2 = tf.nn.relu(tf.matmul(layer1, _W2) + _b2)
+layer2 = tf.nn.dropout(_layer2, rate=0.4)
 
-_W3 = tf.get_variable('W3', shape=[32,16], initializer=tf.contrib.layers.variance_scaling_initializer())
+W3 = tf.get_variable('W3', shape=[32,16], initializer=tf.contrib.layers.variance_scaling_initializer())
 b3 = tf.Variable(tf.random.normal([16]))
-layer3 = tf.nn.relu(tf.matmul(layer2, _W3) + b3)
+_layer3 = tf.nn.relu(tf.matmul(layer2, _W3) + b3)
+layer3 = tf.nn.dropout(_layer3, rate=0.4)
 
 W4 = tf.get_variable('W4', shape=[16,10], initializer=tf.contrib.layers.variance_scaling_initializer())
 b4 = tf.Variable(tf.random.normal([10]))
 ```
 
 * He Initialization + dropout 
-* hidden layer1의 W2, b2를, hidden layer2의 W3을 dropout
+* hidden layer1, hidden layer2 노드의 0.4만큼을 dropout
 
 ### 2) tensorflow.v2
 

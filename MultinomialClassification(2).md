@@ -171,7 +171,9 @@ x_tr, x_tst, y_tr, y_tst = train_test_split(x_data, y_data, test_size=0.3, rando
 ```
 
 tensorflow 1.x 사용할 경우 반드시 one-hot encoding필요
+
 tensorflow 2.x 사용할 경우 one-hot encoding하지 않아도 설정을 통해 one-hot encoding 처리 가능
+
 tensorflow 2.x에서 설정 사용하지 않고 1.x에서와 같이 직접 one-hot encoding 가능
 
 #### 2) Train & Accuracy
@@ -208,9 +210,13 @@ print(evaluation)
 * Dense()
 
   FC layer에 사용
+  
   len(set(y_data)) : Dense layer 가 가진 노드 갯수, logistic 하나 당 Dense 노드 1개binary classification은 노드 1개, multinomial classification은 노드 n(=y값 종류 갯수)개
+  
   *Q: Dense layer의 노드 갯수가 2개일 때와 1개일 때의 차이는??*
+  
   *노드 갯수가 1개인 binary classification =  노드 갯수가 2개인 multinomial classification*
+  
   activation : motinomial classification은 softmax 함수 사용
 
 * sparse_categorical_crossentropy : one-hot encoding 없이 crossentropy사용
@@ -236,9 +242,13 @@ Epoch 100/100
 ```
 
 * model.fit()
+
   verbose=1 : epoch 당 loss, accuracy 출력
+  
   loss : training data set으로 계산한 loss
+  
   val_loss : cross-validation data set으로 계산한 loss
+  
 * evaluate() : loss, accuracy 출력
 
 #### 3) 그래프 분석
@@ -267,8 +277,11 @@ plt.show()
 ![다운로드-1616320645717](https://user-images.githubusercontent.com/72610879/112250371-9a831200-8c9c-11eb-8219-66fac091235e.png)
 
 가로축: epochs
+
 세로축: accuracy
+
 epochs 값 커질 수록 두 그래프 차이 발생(overfitting)
+
 두 그래프 차이 거의 없는 지점(epochs=5)을 epoch 수로 다시 설정하여 모델 재학습(train & accuracy 과정 반복)
 
 ### 3. Scikit-Learn
@@ -331,9 +344,11 @@ print(evaluation)
 
 * solver
 
-  lbfgs(default) : 적은 양의 데이터 처리에 적합한 알고리즘
+lbfgs(default) : 적은 양의 데이터 처리에 적합한 알고리즘
+
 sag(Stochastic Average Gradient Descent) : 많은 양의 데이터 처리에 적합한 알고리즘
-  saga : sag의 확장판, sag보다 더 나은 성능
+
+saga : sag의 확장판, sag보다 더 나은 성능
 
 ```python
      			precision    recall  f1-score   support
@@ -355,7 +370,9 @@ weighted avg       0.92      0.92      0.92     12600
 > Deep Neural Network = Deep Learning(DNN은 가장 일반적인 딥러닝 구조)
 
 Input layer,  hidden layer, output layer로 구성
+
 hidden layer 갯수가 많을수록 deep
+
 output layer 이외의 layer에 있는 각각의 노드는 logistic regression 1개 가리킴
 
 ### 1. tensorflow.v1
@@ -581,6 +598,7 @@ accuracy: 0.9461905
 > layer  안의 일부 노드를 작동시키지 않는 것
 
 dropout할 layer 앞에 _를 붙인다
+
 overfitting 해결 방법 중 하나
 
 ```python

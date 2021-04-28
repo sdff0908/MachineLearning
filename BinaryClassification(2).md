@@ -252,7 +252,6 @@ model.add(Dense(1, activation='sigmoid'))
 
 # 모델 설정
 model.compile(optimizer=SGD(learning_rate=1e-2), loss='binary_crossentropy', metrics=['accuracy'])
-# metrics???????????
 
 # 모델 학습
 model.fit(x_tr, y_tr, epochs=1000, verbose=1)

@@ -164,7 +164,8 @@ plt.show()
 * array_to_img() : 3차원 np.array →  이미지
                               gen.flow(data) 안에 있는 np.array는 4차원, batch[0] 사용하여 3차원으로 만듦
 
-![다운로드](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png)	
+![다운로드](https://user-images.githubusercontent.com/72610879/120614580-59745e80-c492-11eb-911d-5e203a104979.png)
+
 
 이미지는 ImageGenerator() 에서 설정한 값들을 종합한 결과
 
